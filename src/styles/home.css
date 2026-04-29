@@ -1,0 +1,115 @@
+
+:root {
+  --primary-purple: #5C4EB8;
+  --primary-orange: #FF6B35;
+  --accent-teal: #2EC4B6;
+  --accent-amber: #F4A261;
+  --bg-light: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-light);
+}
+
+/* Custom Card Shadows */
+.card {
+  border-radius: 12px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+}
+
+/* Stats Cards Accents */
+.border-success { border-bottom-width: 4px !important; }
+.border-warning { border-bottom-width: 4px !important; }
+.border-danger { border-bottom-width: 4px !important; }
+
+/* Custom Buttons */
+.btn-purple {
+  background-color: var(--primary-purple);
+  border-color: var(--primary-purple);
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #4b3e9b;
+  border-color: #4b3e9b;
+  color: white;
+}
+
+/* Navbar Brand Styling */
+.navbar-brand h5 {
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+/* Table Styling */
+.table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  font-weight: 700;
+}
+
+.table tbody td {
+  padding: 1rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Badges and Pills */
+.badge {
+  padding: 0.5em 0.8em;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+/* Form Controls */
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.1);
+}
+
+.form-label {
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 16px;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding: 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 1rem !important;
+  }
+  
+  .stats-row .col-md-3 {
+    margin-bottom: 1rem;
+  }
+}

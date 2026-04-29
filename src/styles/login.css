@@ -1,0 +1,149 @@
+/* =========================
+   VARIABLES GLOBALES
+========================= */
+:root {
+  --auth-orange: #FF6B35;
+  --auth-teal: #2EC4B6;
+  --auth-purple: #5C4EB8;
+  --auth-bg: #fff8f6;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+.auth-wrapper {
+  background-color: var(--auth-bg);
+  font-family: 'Manrope', sans-serif;
+
+  /* Fondo con efecto suave */
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 107, 53, 0.05) 0%,
+    transparent 50%
+  );
+}
+
+/* =========================
+   TARJETA (CARD)
+========================= */
+.auth-card {
+  background-color: #ffffff;
+  border-radius: 20px !important;
+}
+
+/* =========================
+   LOGO
+========================= */
+.brand-logo-large {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--auth-orange);
+  color: white;
+  font-size: 32px;
+
+  border-radius: 16px;
+
+  /* Sombra */
+  box-shadow: 0 10px 20px rgba(255, 107, 53, 0.2);
+}
+
+/* =========================
+   TEXTOS
+========================= */
+.auth-title {
+  color: var(--auth-orange);
+  font-size: 1.75rem;
+  letter-spacing: -1px;
+}
+
+.auth-subtitle {
+  font-size: 0.9rem;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+/* Labels */
+.form-label {
+  font-size: 0.7rem !important;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+}
+
+/* Input con icono */
+.input-group-text {
+  border-right: none;
+  color: #adb5bd;
+}
+
+/* Inputs */
+.form-control {
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  border-left: none;
+}
+
+/* Quitar efecto azul por defecto */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #dee2e6;
+}
+
+/* =========================
+   COLORES DE TEXTO
+========================= */
+.text-orange {
+  color: var(--auth-orange) !important;
+}
+
+.text-teal {
+  color: var(--auth-teal) !important;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+.btn-orange {
+  background-color: var(--auth-orange) !important;
+  border-color: var(--auth-orange) !important;
+  border-radius: 12px;
+
+  transition: all 0.2s ease;
+}
+
+/* Hover del botón */
+.btn-orange:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3) !important;
+}
+
+/* =========================
+   FEATURES (DETALLES)
+========================= */
+.auth-features .feature-item span {
+  font-size: 0.6rem;
+  opacity: 0.6;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 576px) {
+
+  /* Quitar bordes en móvil */
+  .auth-card {
+    border-radius: 0 !important;
+  }
+
+  /* Fondo blanco en móvil */
+  .auth-wrapper {
+    background-color: #ffffff;
+  }
+}
